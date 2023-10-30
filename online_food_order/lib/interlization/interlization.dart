@@ -9,7 +9,13 @@ class Internationalization extends Translations {
               " expectional food delivery\n "
               "service.",
           LocalName.getStarted: "Get  Started",
-          LocalName.login: "Login"
+          LocalName.login: "Login",
+          LocalName.email: "Email",
+          LocalName.passwrod: "Passwrod",
+          LocalName.loginForm: "Login Form",
+          LocalName.signupForm: "Siginup Form",
+          LocalName.phone: "Phone",
+          LocalName.signUp : "Sign "
         }
       };
 }
@@ -21,4 +27,9 @@ class LocalName {
   static String getStarted = "get_started";
   static String login = "login";
   static String email = "email";
+  static String passwrod = "passwrod";
+  static String phone = "phone";
+  static String loginForm = "login_form";
+  static String signupForm = "siginup_form";
+  static String signUp = "Sigin_up";
 }

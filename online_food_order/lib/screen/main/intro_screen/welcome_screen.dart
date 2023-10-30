@@ -5,8 +5,9 @@ import 'package:online_food_order/%20utils/custom_image.dart';
 import 'package:online_food_order/interlization/interlization.dart';
 import 'package:online_food_order/screen/main/auth/login_screen/login_siginup_screen.dart';
 
-import '../../../compoents/custom_elev_butt_widget.dart';
-import '../../../compoents/custom_text_widget.dart';
+
+import '../../../customWidget/custom_elev_butt_widget.dart';
+import '../../../customWidget/custom_text_widget.dart';
 
 class WelcomeScreen extends StatelessWidget {
   const WelcomeScreen({super.key});
