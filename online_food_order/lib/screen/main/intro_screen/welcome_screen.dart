@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 import 'package:online_food_order/%20utils/custom_color.dart';
 import 'package:online_food_order/%20utils/custom_image.dart';
 import 'package:online_food_order/interlization/interlization.dart';
+import 'package:online_food_order/screen/main/auth/login_screen/login_siginup_screen.dart';
 
 import '../../../compoents/custom_elev_butt_widget.dart';
 import '../../../compoents/custom_text_widget.dart';
@@ -44,7 +45,9 @@ class WelcomeScreen extends StatelessWidget {
               sizedBoxWidth: 0.8,
               sizedBoxHieght: 0.15,
               text: LocalName.getStarted.tr,
-              onpressed: () {},
+              onpressed: () {
+                Get.to(LoginSignupPage());
+              },
               textColor: CustomColor().whiteColor,
               buttonBgColor: CustomColor().buttonColor,
               buttonRadius: 25,

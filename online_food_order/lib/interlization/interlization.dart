@@ -8,7 +8,8 @@ class Internationalization extends Translations {
           LocalName.paragrphText: "Satisfy every carving with our"
               " expectional food delivery\n "
               "service.",
-            LocalName.getStarted : "Get  Started"  
+          LocalName.getStarted: "Get  Started",
+          LocalName.login: "Login"
         }
       };
 }
@@ -18,4 +19,6 @@ class LocalName {
   static String paragrphText =
       "satisfy_every_carving_with_our_expectional_food_delivery_service.";
   static String getStarted = "get_started";
+  static String login = "login";
+  static String email = "email";
 }
