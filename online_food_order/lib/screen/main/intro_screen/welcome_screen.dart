@@ -31,7 +31,7 @@ class WelcomeScreen extends StatelessWidget {
               fontWeight: FontWeight.w400,
             ),
             Padding(
-              padding: const EdgeInsets.only(left: 38, right: 20, top: 10),
+              padding: const EdgeInsets.only(left: 40, right: 20, top: 10),
               child: CustomTextWidget(
                   text: LocalName.paragrphText.tr,
                   fontSize: 18,
