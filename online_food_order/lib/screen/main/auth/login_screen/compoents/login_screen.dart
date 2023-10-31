@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 import 'package:online_food_order/%20utils/custom_color.dart';
 import 'package:online_food_order/customWidget/custom_elev_butt_widget.dart';
 import 'package:online_food_order/customWidget/custom_text_widget.dart';
+import 'package:online_food_order/customWidget/cutom_image_widget.dart';
 
 import '../../../../../ utils/custom_image.dart';
 import '../../../../../customWidget/custom_text_form_widget.dart';
@@ -16,14 +17,14 @@ class LoginScreen extends StatelessWidget {
     return Container(
       alignment: Alignment.center,
       child: Form(
-        key: authController.formKey,
+         key: authController.formKey,
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Image.asset(
-              CustomImage().appIconImage,
-              width: MediaQuery.sizeOf(context).width * 0.7,
+            customImageWidget(customImage: CustomImage().appIconImage,
+            width: MediaQuery.sizeOf(context).width * 0.7,
             ),
+           
             SizedBox(
               height: 10,
             ),

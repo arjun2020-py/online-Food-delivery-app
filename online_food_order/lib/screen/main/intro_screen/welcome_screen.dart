@@ -7,6 +7,7 @@ import 'package:online_food_order/screen/main/auth/login_screen/login_siginup_sc
 
 import '../../../customWidget/custom_elev_butt_widget.dart';
 import '../../../customWidget/custom_text_widget.dart';
+import '../../../customWidget/cutom_image_widget.dart';
 
 class WelcomeScreen extends StatelessWidget {
   const WelcomeScreen({super.key});
@@ -23,9 +24,10 @@ class WelcomeScreen extends StatelessWidget {
                 SizedBox(
                   height: 100,
                 ),
-                Image.asset(
-                  CustomImage().appIconImage,
+                customImageWidget(
+                  customImage:  CustomImage().appIconImage,
                   width: MediaQuery.sizeOf(context).width * 1,
+
                 ),
                 SizedBox(height: 40),
                 CustomTextWidget(
@@ -62,3 +64,5 @@ class WelcomeScreen extends StatelessWidget {
     );
   }
 }
+
+ 
