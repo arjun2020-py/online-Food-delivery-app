@@ -15,7 +15,11 @@ class Internationalization extends Translations {
           LocalName.loginForm: "Login Form",
           LocalName.signupForm: "Siginup Form",
           LocalName.phone: "Phone",
-          LocalName.signUp : "Sign "
+          LocalName.signUp: "Sign Up ",
+          LocalName.pleseEnterValidEmailId: "Please Enter Valid Email id",
+          LocalName.pleaseEnterValidPhoneNumber : "Please Enter Valid Phone Number",
+          LocalName.pleaseEnterValidPasswrod : "Please Enter Valid Passwrod"
+
         }
       };
 }
@@ -32,4 +36,7 @@ class LocalName {
   static String loginForm = "login_form";
   static String signupForm = "siginup_form";
   static String signUp = "Sigin_up";
+  static String pleseEnterValidEmailId = "plese_enter_valid_email_id";
+  static String pleaseEnterValidPhoneNumber = "please_enter_valid_phone_number";
+  static String pleaseEnterValidPasswrod = "please_enter_valid_passwrod";
 }
