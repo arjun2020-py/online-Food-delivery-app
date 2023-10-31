@@ -17,9 +17,13 @@ class Internationalization extends Translations {
           LocalName.phone: "Phone",
           LocalName.signUp: "Sign Up ",
           LocalName.pleseEnterValidEmailId: "Please Enter Valid Email id",
-          LocalName.pleaseEnterValidPhoneNumber : "Please Enter Valid Phone Number",
-          LocalName.pleaseEnterValidPasswrod : "Please Enter Valid Passwrod"
-
+          LocalName.pleaseEnterValidPhoneNumber:
+              "Please Enter Valid Phone Number",
+          LocalName.pleaseEnterValidPasswrod: "Please Enter Valid Passwrod",
+          LocalName.phoneVerfication: "Phone Verfication",
+          LocalName.enterYourVerficationCode: "Enter your verfication code",
+          LocalName.resend: "Resend",
+          LocalName.verify : "Verify"
         }
       };
 }
@@ -39,4 +43,8 @@ class LocalName {
   static String pleseEnterValidEmailId = "plese_enter_valid_email_id";
   static String pleaseEnterValidPhoneNumber = "please_enter_valid_phone_number";
   static String pleaseEnterValidPasswrod = "please_enter_valid_passwrod";
+  static String phoneVerfication = "phone_verfication";
+  static String enterYourVerficationCode = "enter_your_verfication_code";
+  static String resend = "resend";
+  static String verify = "verify";
 }

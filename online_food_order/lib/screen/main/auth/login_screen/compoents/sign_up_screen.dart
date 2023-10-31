@@ -25,16 +25,16 @@ class SignUpScreen extends StatelessWidget {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                customImageWidget(customImage: CustomImage().appIconImage,
-                width: MediaQuery.sizeOf(context).width *0.7,
+                customImageWidget(
+                  customImage: CustomImage().appIconImage,
+                  width: MediaQuery.sizeOf(context).width * 0.7,
                 ),
-               
                 SizedBox(
                   height: 10,
                 ),
                 CustomTextWidget(
                     fontSize: 20,
-                    fontWeight: FontWeight.normal,
+                    fontWeight: FontWeight.w500,
                     text: LocalName.signupForm.tr),
                 SizedBox(
                   height: 10,

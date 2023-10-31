@@ -25,22 +25,21 @@ class WelcomeScreen extends StatelessWidget {
                   height: 100,
                 ),
                 customImageWidget(
-                  customImage:  CustomImage().appIconImage,
+                  customImage: CustomImage().appIconImage,
                   width: MediaQuery.sizeOf(context).width * 1,
-
                 ),
                 SizedBox(height: 40),
                 CustomTextWidget(
                   text: LocalName.onlineFoodDelivery.tr,
                   fontSize: 30,
-                  fontWeight: FontWeight.w400,
+                  fontWeight: FontWeight.w500,
                 ),
                 Padding(
                   padding: const EdgeInsets.only(left: 40, right: 20, top: 10),
                   child: CustomTextWidget(
                       text: LocalName.paragrphText.tr,
                       fontSize: 18,
-                      fontWeight: FontWeight.normal),
+                      fontWeight: FontWeight.w300),
                 ),
                 SizedBox(
                   height: MediaQuery.sizeOf(context).height * 0.2,
@@ -55,7 +54,7 @@ class WelcomeScreen extends StatelessWidget {
                   textColor: CustomColor().whiteColor,
                   buttonBgColor: CustomColor().buttonColor,
                   buttonRadius: 25,
-                )
+                ),
               ],
             ),
           ],
@@ -64,5 +63,3 @@ class WelcomeScreen extends StatelessWidget {
     );
   }
 }
-
- 

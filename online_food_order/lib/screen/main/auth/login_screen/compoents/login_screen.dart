@@ -8,6 +8,7 @@ import 'package:online_food_order/customWidget/cutom_image_widget.dart';
 import '../../../../../ utils/custom_image.dart';
 import '../../../../../customWidget/custom_text_form_widget.dart';
 import '../../../../../interlization/interlization.dart';
+import '../../otp/otp_screen.dart';
 import '../login_signup_controller.dart';
 
 class LoginScreen extends StatelessWidget {
@@ -17,20 +18,21 @@ class LoginScreen extends StatelessWidget {
     return Container(
       alignment: Alignment.center,
       child: Form(
-         key: authController.formKey,
+        key: authController.formKey,
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            customImageWidget(customImage: CustomImage().appIconImage,
-            width: MediaQuery.sizeOf(context).width * 0.7,
+            customImageWidget(
+              customImage: CustomImage().appIconImage,
+              width: MediaQuery.sizeOf(context).width * 0.7,
             ),
-           
+
             SizedBox(
               height: 10,
             ),
             CustomTextWidget(
                 fontSize: 20,
-                fontWeight: FontWeight.normal,
+                fontWeight: FontWeight.w500,
                 text: LocalName.loginForm.tr),
             SizedBox(
               height: 10,
@@ -52,6 +54,7 @@ class LoginScreen extends StatelessWidget {
                 onpressed: () {
                   if (authController.formKey.currentState!.validate()) {
                     authController.clearTextedtingController();
+                    Get.to(OtpScreen());
                   }
                 },
                 textColor: CustomColor().whiteColor,
