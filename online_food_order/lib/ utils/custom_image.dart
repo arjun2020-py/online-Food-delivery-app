@@ -9,4 +9,5 @@ class CustomImage {
   String offer5 = 'assets/images/offer5.jpg';
   String offer6 = 'assets/images/offer7.jpg';
   String offer7 = 'assets/images/offer8.png';
+  String icream = 'assets/images/icream.png';
 }

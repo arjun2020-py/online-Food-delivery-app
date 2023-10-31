@@ -24,7 +24,14 @@ class Internationalization extends Translations {
           LocalName.enterYourVerficationCode: "Enter your verfication code",
           LocalName.resend: "Resend",
           LocalName.verify: "Verify",
-          LocalName.searchFood: "Search Food...."
+          LocalName.searchFood: "Search Food....",
+          LocalName.iceCream: "Ice-cream",
+          LocalName.pizza: "Pizza",
+          LocalName.nodlies: 'Nodlies',
+          LocalName.juices: "Juices",
+          LocalName.burger: "Burger",
+          LocalName.baryani: "Baryani",
+          LocalName.categories : "Categories"
         }
       };
 }
@@ -48,5 +55,12 @@ class LocalName {
   static String enterYourVerficationCode = "enter_your_verfication_code";
   static String resend = "resend";
   static String verify = "verify";
+  static String categories = "categories";
   static String searchFood = 'search_food';
+  static String iceCream = 'ice_cream';
+  static String pizza = 'pizza';
+  static String nodlies = 'nidlies';
+  static String juices = 'juices';
+  static String burger = 'burger';
+  static String baryani = 'baryani';
 }

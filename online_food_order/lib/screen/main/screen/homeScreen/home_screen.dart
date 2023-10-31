@@ -3,7 +3,10 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:online_food_order/%20utils/custom_color.dart';
 import 'package:online_food_order/%20utils/custom_image.dart';
+import 'package:online_food_order/customWidget/custom_text_widget.dart';
+import 'package:online_food_order/interlization/interlization.dart';
 
+import 'compoents/custom_catagery_screen.dart';
 import 'compoents/custom_coursole_widget.dart';
 import 'compoents/home_serach_widget.dart';
 import 'home_screen_controller.dart';
@@ -30,7 +33,9 @@ class HomeScreen extends StatelessWidget {
                     ),
                     CircleAvatar(
                       radius: 25,
-                      backgroundImage: AssetImage(CustomImage().profileImage),
+                      backgroundImage: AssetImage(
+                        CustomImage().profileImage,
+                      ),
                     ),
                     Spacer(),
                     IconButton(
@@ -52,6 +57,20 @@ class HomeScreen extends StatelessWidget {
                   height: 10,
                 ),
                 customCarouselWidet(homeController: homeController),
+                SizedBox(
+                  height: 10,
+                ),
+                Padding(
+                  padding: const EdgeInsets.only(right: 180),
+                  child: CustomTextWidget(
+                      fontSize: 25,
+                      fontWeight: FontWeight.w500,
+                      text: LocalName.categories.tr),
+                ),
+                SizedBox(
+                  height: 10,
+                ),
+                customCatageryScreen(homeController: homeController),
               ],
             ),
           ],

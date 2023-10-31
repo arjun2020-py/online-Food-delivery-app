@@ -1,67 +1,57 @@
 import 'package:flutter/material.dart';
-import 'package:carousel_slider/carousel_slider.dart';
 
-class CarouselSliderWithAutoPlay extends StatefulWidget {
-  @override
-  _CarouselSliderWithAutoPlayState createState() =>
-      _CarouselSliderWithAutoPlayState();
+
+
+class Food {
+  final String name;
+  final String image;
+
+  Food(this.name, this.image);
 }
 
-class _CarouselSliderWithAutoPlayState
-    extends State<CarouselSliderWithAutoPlay> {
-  int _current = 0;
-  CarouselController buttonCarouselController = CarouselController();
-  final List<String> imageList = [
-    'https://via.placeholder.com/350x150',
-    'https://via.placeholder.com/350x150',
-    'https://via.placeholder.com/350x150',
-    'https://via.placeholder.com/350x150',
+class MyApp extends StatelessWidget {
+  final List<Food> foods = [
+    Food('Pizza', 'assets/pizza.jpg'),
+    Food('Burger', 'assets/burger.jpg'),
+    Food('Sushi', 'assets/sushi.jpg'),
+    // Add more food items as needed
   ];
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Column(
-        children: [
-          CarouselSlider(
-            items: imageList.map((item) {
+    return MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text('Horizontal Food List'),
+        ),
+        body: Container(
+          height: 200, // Adjust height as needed
+          child: ListView.builder(
+            scrollDirection: Axis.horizontal,
+            itemCount: foods.length,
+            itemBuilder: (context, index) {
               return Container(
-                margin: EdgeInsets.all(5.0),
-                child: Image.network(
-                  item,
-                  fit: BoxFit.cover,
+                margin: EdgeInsets.all(8),
+                width: 160, // Adjust width as needed
+                child: Column(
+                  children: <Widget>[
+                    Image.asset(
+                      foods[index].image,
+                      height: 120,
+                      width: 120,
+                      fit: BoxFit.cover,
+                    ),
+                    SizedBox(height: 8),
+                    Text(
+                      foods[index].name,
+                      style: TextStyle(fontSize: 16),
+                    ),
+                  ],
                 ),
               );
-            }).toList(),
-            options:
-             CarouselOptions(
-              autoPlay: true,
-              enlargeCenterPage: true,
-              aspectRatio: 2.0,
-              onPageChanged: (index, reason) {
-                setState(() {
-                  _current = index;
-                });
-              },
-            ),
-            carouselController: buttonCarouselController,
+            },
           ),
-          // Row(
-          //   mainAxisAlignment: MainAxisAlignment.center,
-          //   children: imageList.map((url) {
-          //     int index = imageList.indexOf(url);
-          //     return Container(
-          //       width: 8.0,
-          //       height: 8.0,
-          //       margin: EdgeInsets.symmetric(horizontal: 2.0),
-          //       decoration: BoxDecoration(
-          //         shape: BoxShape.circle,
-          //         color: _current == index ? Colors.blueAccent : Colors.grey,
-          //       ),
-          //     );
-          //   }).toList(),
-          // ),
-        ],
+        ),
       ),
     );
   }
