@@ -23,7 +23,8 @@ class Internationalization extends Translations {
           LocalName.phoneVerfication: "Phone Verfication",
           LocalName.enterYourVerficationCode: "Enter your verfication code",
           LocalName.resend: "Resend",
-          LocalName.verify : "Verify"
+          LocalName.verify: "Verify",
+          LocalName.searchFood: "Search Food...."
         }
       };
 }
@@ -47,4 +48,5 @@ class LocalName {
   static String enterYourVerficationCode = "enter_your_verfication_code";
   static String resend = "resend";
   static String verify = "verify";
+  static String searchFood = 'search_food';
 }
