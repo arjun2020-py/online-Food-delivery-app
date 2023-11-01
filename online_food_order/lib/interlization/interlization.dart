@@ -44,7 +44,18 @@ class Internationalization extends Translations {
           LocalName.villaMaya: "Villa Maya Restaurant ",
           LocalName.aditiRestaurant: 'Aditi Restaurant',
           LocalName.gingerHouse: " Ginger House",
-          LocalName.spiceVillage: "Spice Village"
+          LocalName.spiceVillage: "Spice Village",
+          LocalName.account: "Account",
+          LocalName.settings: "Settings",
+          LocalName.notifcation: "Notifcation",
+          LocalName.languages: "Languages",
+          LocalName.currency: "Currency",
+          LocalName.paymentMenthod: "Payment Menthod",
+          LocalName.termsOfUse: "Terms Of Use",
+          LocalName.logout: "Logout",
+          LocalName.orders: "Orders",
+          LocalName.others: "Others",
+          LocalName.privacyPolicy : "Privacy Policy"
         }
       };
 }
@@ -89,6 +100,15 @@ class LocalName {
   static String aditiRestaurant = 'aditi_restaurant';
   static String gingerHouse = 'ginger_house';
   static String spiceVillage = 'spice_village';
-
-
+  static String account = 'account';
+  static String settings = 'settings';
+  static String notifcation = 'notifcation';
+  static String languages = 'languages';
+  static String currency = 'currency';
+  static String paymentMenthod = 'payment_menthod';
+  static String privacyPolicy = "privacy_policy";
+  static String termsOfUse = 'terms_of_use';
+  static String logout = 'logout';
+  static String orders = 'orders';
+  static String others = 'others';
 }
