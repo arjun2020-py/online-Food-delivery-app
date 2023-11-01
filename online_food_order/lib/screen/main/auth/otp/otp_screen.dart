@@ -7,6 +7,7 @@ import 'package:online_food_order/customWidget/custom_text_widget.dart';
 import 'package:online_food_order/customWidget/cutom_image_widget.dart';
 import 'package:online_food_order/interlization/interlization.dart';
 
+import '../../screen/bottomNavScreen/nav_bar_screen.dart';
 import '../../screen/homeScreen/home_screen.dart';
 import '../../screen/temp.dart';
 import 'compoents/custom_otp_widget.dart';
@@ -70,7 +71,7 @@ class OtpScreen extends StatelessWidget {
                   CustomElevButton(
                       text: LocalName.verify.tr,
                       onpressed: () {
-                        Get.to(HomeScreen());
+                        Get.to(BottomNavBarScreen());
                       },
                       textColor: CustomColor().whiteColor,
                       buttonBgColor: CustomColor().buttonColor,

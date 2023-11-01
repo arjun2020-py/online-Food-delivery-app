@@ -89,4 +89,6 @@ class LocalName {
   static String aditiRestaurant = 'aditi_restaurant';
   static String gingerHouse = 'ginger_house';
   static String spiceVillage = 'spice_village';
+
+
 }
