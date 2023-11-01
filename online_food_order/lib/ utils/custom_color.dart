@@ -6,4 +6,5 @@ class CustomColor {
   Color whiteColor = Colors.white;
   Color blackColor = Colors.black;
   Color greyColor = Colors.grey;
+  Color transparentColor = Colors.transparent;
 }
