@@ -13,7 +13,8 @@ class customCatageryScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return 
+    Container(
       height: 100, // Set a fixed height here as an example
       child: ListView.builder(
         scrollDirection: Axis.horizontal,
@@ -26,8 +27,8 @@ class customCatageryScreen extends StatelessWidget {
             child: Column(
               children: [
                 CircleAvatar(
-                  backgroundImage: AssetImage(
-                      homeController.catageryList[index].image),
+                  backgroundImage:
+                      AssetImage(homeController.catageryList[index].image),
                 ),
                 CustomTextWidget(
                   fontSize: 20,

@@ -31,7 +31,20 @@ class Internationalization extends Translations {
           LocalName.juices: "Juices",
           LocalName.burger: "Burger",
           LocalName.baryani: "Baryani",
-          LocalName.categories : "Categories"
+          LocalName.categories: "Categories",
+          LocalName.popularFood: "Popular Foods",
+          LocalName.idiyappamWithCurry: "Idiyappam With Curry",
+          LocalName.puttuAndKadalaCurry: "Puttu And Kadala Curry",
+          LocalName.appamWithIshtu: "Appam With Ishtu",
+          LocalName.dosaGheeRoast: "Dosa Ghee Roast",
+          LocalName.idliSambar: "Idli Sambar",
+          LocalName.nadanKozhiVaruthathu: "Nadan Kozhi Varuthathu",
+          LocalName.saravanaBhavan: "Saravana Bhavan Restaurant",
+          LocalName.mezbanRestaurant: "Mezban Restaurant",
+          LocalName.villaMaya: "Villa Maya Restaurant ",
+          LocalName.aditiRestaurant: 'Aditi Restaurant',
+          LocalName.gingerHouse: " Ginger House",
+          LocalName.spiceVillage: "Spice Village"
         }
       };
 }
@@ -63,4 +76,17 @@ class LocalName {
   static String juices = 'juices';
   static String burger = 'burger';
   static String baryani = 'baryani';
+  static String popularFood = 'popular_food';
+  static String idiyappamWithCurry = 'idiyappam_with_curry';
+  static String puttuAndKadalaCurry = 'puttu_and_kadala_curry';
+  static String appamWithIshtu = 'appam_with_ishtu';
+  static String dosaGheeRoast = 'dosa_ghee_roast';
+  static String idliSambar = 'idli_sambar';
+  static String nadanKozhiVaruthathu = "nadan_kozhi_varuthathu";
+  static String saravanaBhavan = "saravana_bhavan";
+  static String mezbanRestaurant = 'mezban_restaurant';
+  static String villaMaya = 'villa_maya';
+  static String aditiRestaurant = 'aditi_restaurant';
+  static String gingerHouse = 'ginger_house';
+  static String spiceVillage = 'spice_village';
 }

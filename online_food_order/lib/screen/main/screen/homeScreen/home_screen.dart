@@ -9,6 +9,7 @@ import 'package:online_food_order/interlization/interlization.dart';
 import 'compoents/custom_catagery_screen.dart';
 import 'compoents/custom_coursole_widget.dart';
 import 'compoents/home_serach_widget.dart';
+import 'compoents/popular_food_widget.dart';
 import 'home_screen_controller.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -63,7 +64,7 @@ class HomeScreen extends StatelessWidget {
                 Padding(
                   padding: const EdgeInsets.only(right: 180),
                   child: CustomTextWidget(
-                      fontSize: 25,
+                      fontSize: 24,
                       fontWeight: FontWeight.w500,
                       text: LocalName.categories.tr),
                 ),
@@ -71,6 +72,14 @@ class HomeScreen extends StatelessWidget {
                   height: 10,
                 ),
                 customCatageryScreen(homeController: homeController),
+                Padding(
+                  padding: const EdgeInsets.only(right: 150),
+                  child: CustomTextWidget(
+                      fontSize: 24,
+                      fontWeight: FontWeight.w500,
+                      text: LocalName.popularFood.tr),
+                ),
+                popularFoodWidget(homeController: homeController)
               ],
             ),
           ],
@@ -79,3 +88,5 @@ class HomeScreen extends StatelessWidget {
     );
   }
 }
+
+ 

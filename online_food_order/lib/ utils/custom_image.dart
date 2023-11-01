@@ -10,4 +10,16 @@ class CustomImage {
   String offer6 = 'assets/images/offer7.jpg';
   String offer7 = 'assets/images/offer8.png';
   String icream = 'assets/images/icream.png';
+  String pizza = 'assets/images/pizaa.jpg';
+  String nodiles = 'assets/images/nodiles.jpg';
+  String juices = 'assets/images/juice.jpeg';
+  String burger = 'assets/images/burger.jpg';
+  String bryani = 'assets/images/bryani.jpg';
+
+  String food1 = 'assets/images/food1.png';
+  String food2 = 'assets/images/food2.png';
+  String food3 = 'assets/images/food3.png';
+  String food4 = 'assets/images/food4.png';
+  String food5 = 'assets/images/food5.png';
+  String food6 = 'assets/images/food6.png';
 }
