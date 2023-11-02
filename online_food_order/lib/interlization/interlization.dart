@@ -55,7 +55,11 @@ class Internationalization extends Translations {
           LocalName.logout: "Logout",
           LocalName.orders: "Orders",
           LocalName.others: "Others",
-          LocalName.privacyPolicy : "Privacy Policy"
+          LocalName.privacyPolicy: "Privacy Policy",
+          LocalName.reviwers: "Reviews",
+          LocalName.addToCart: "Add To Cart",
+          LocalName.buyNow: 'Buy Now',
+          LocalName.ingredients: "Ingredients"
         }
       };
 }
@@ -111,4 +115,8 @@ class LocalName {
   static String logout = 'logout';
   static String orders = 'orders';
   static String others = 'others';
+  static String reviwers = 'reviwers';
+  static String addToCart = 'add_to_cart';
+  static String buyNow = 'buy_now';
+  static String ingredients = 'ingredients';
 }
