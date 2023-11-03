@@ -127,31 +127,34 @@ class CartScreen extends StatelessWidget {
               },
             ),
           ),
-          Card(
-            color: CustomColor().cutomCardColor,
-            child: Column(
-              children: [
-                CalualatePriceWidget(
-                  price: '280',
-                  text: LocalName.subTotal.tr,
-                ),
-                Divider(
-                  color: CustomColor().blackColor,
-                  thickness: 0.5,
-                ),
-                CalualatePriceWidget(
-                    text: LocalName.deliveryCharge.tr, price: '20'),
-                Divider(
-                  color: CustomColor().blackColor,
-                  thickness: 0.5,
-                ),
-                CalualatePriceWidget(
-                  text: LocalName.total.tr,
-                  price: '300',
-                  color: CustomColor().buttonColor,
-                  priceColor: CustomColor().buttonColor,
-                )
-              ],
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 10),
+            child: Card(
+              color: CustomColor().cutomCardColor,
+              child: Column(
+                children: [
+                  CalualatePriceWidget(
+                    price: '280',
+                    text: LocalName.subTotal.tr,
+                  ),
+                  Divider(
+                    color: CustomColor().blackColor,
+                    thickness: 0.5,
+                  ),
+                  CalualatePriceWidget(
+                      text: LocalName.deliveryCharge.tr, price: '20'),
+                  Divider(
+                    color: CustomColor().blackColor,
+                    thickness: 0.5,
+                  ),
+                  CalualatePriceWidget(
+                    text: LocalName.total.tr,
+                    price: '300',
+                    color: CustomColor().buttonColor,
+                    priceColor: CustomColor().buttonColor,
+                  )
+                ],
+              ),
             ),
           ),
           SizedBox(
@@ -163,7 +166,7 @@ class CartScreen extends StatelessWidget {
                 onpressed: () {},
                 textColor: CustomColor().whiteColor,
                 buttonBgColor: CustomColor().buttonColor,
-                buttonRadius: 20,
+                buttonRadius: 25,
                 sizedBoxWidth: 0.9,
                 sizedBoxHieght: 0.15),
           ),
