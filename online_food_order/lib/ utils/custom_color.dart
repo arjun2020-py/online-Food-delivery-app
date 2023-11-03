@@ -7,4 +7,5 @@ class CustomColor {
   Color blackColor = Colors.black;
   Color greyColor = Colors.grey;
   Color transparentColor = Colors.transparent;
+  Color cutomCardColor = Color(0xfff9d9da);
 }

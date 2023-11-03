@@ -2,12 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:online_food_order/%20utils/custom_color.dart';
 import 'package:online_food_order/%20utils/custom_image.dart';
+import 'package:online_food_order/customWidget/custom_elev_butt_widget.dart';
 import 'package:online_food_order/customWidget/custom_text_widget.dart';
 import 'package:online_food_order/customWidget/cutom_image_widget.dart';
 import 'package:online_food_order/screen/main/screen/homeScreen/compoents/custom_price_widget.dart';
 
 import '../../../../interlization/interlization.dart';
 import '../detailedFoodScreen/compoents/custom_add_remove_widget.dart';
+import 'compoents/clalaulate_price.dart';
 
 class CartScreen extends StatelessWidget {
   const CartScreen({super.key});
@@ -41,11 +43,12 @@ class CartScreen extends StatelessWidget {
           Expanded(
             child: ListView.builder(
               shrinkWrap: true,
-              itemCount: 10,
+              itemCount: 3,
               itemBuilder: (BuildContext context, int index) {
                 return Padding(
                   padding: const EdgeInsets.only(left: 10, right: 10),
                   child: Card(
+                    color: CustomColor().cutomCardColor,
                     child: Row(
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
@@ -124,6 +127,49 @@ class CartScreen extends StatelessWidget {
               },
             ),
           ),
+          Card(
+            color: CustomColor().cutomCardColor,
+            child: Column(
+              children: [
+                CalualatePriceWidget(
+                  price: '280',
+                  text: LocalName.subTotal.tr,
+                ),
+                Divider(
+                  color: CustomColor().blackColor,
+                  thickness: 0.5,
+                ),
+                CalualatePriceWidget(
+                    text: LocalName.deliveryCharge.tr, price: '20'),
+                Divider(
+                  color: CustomColor().blackColor,
+                  thickness: 0.5,
+                ),
+                CalualatePriceWidget(
+                  text: LocalName.total.tr,
+                  price: '300',
+                  color: CustomColor().buttonColor,
+                  priceColor: CustomColor().buttonColor,
+                )
+              ],
+            ),
+          ),
+          SizedBox(
+            height: 10,
+          ),
+          Center(
+            child: CustomElevButton(
+                text: LocalName.placeOrder.tr,
+                onpressed: () {},
+                textColor: CustomColor().whiteColor,
+                buttonBgColor: CustomColor().buttonColor,
+                buttonRadius: 20,
+                sizedBoxWidth: 0.9,
+                sizedBoxHieght: 0.15),
+          ),
+          SizedBox(
+            height: 10,
+          )
         ],
       ),
     );

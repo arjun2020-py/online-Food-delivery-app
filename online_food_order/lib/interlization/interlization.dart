@@ -61,7 +61,11 @@ class Internationalization extends Translations {
           LocalName.buyNow: 'Buy Now',
           LocalName.ingredients: "Ingredients",
           LocalName.cart: "Cart",
-          LocalName.selectedItems: "Selected Items"
+          LocalName.selectedItems: "Selected Items",
+          LocalName.subTotal: "Sub Total",
+          LocalName.deliveryCharge: "Delivery Charge",
+          LocalName.total: "Total",
+          LocalName.placeOrder : "Place Order"
         }
       };
 }
@@ -123,4 +127,8 @@ class LocalName {
   static String ingredients = 'ingredients';
   static String cart = 'cart';
   static String selectedItems = 'selected_items';
+  static String subTotal = 'sub_total';
+  static String deliveryCharge = 'delivery_charge';
+  static String total = 'total';
+  static String placeOrder = 'place_order';
 }
