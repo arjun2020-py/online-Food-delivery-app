@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:online_food_order/%20utils/custom_color.dart';
+import 'package:online_food_order/customWidget/custom_elev_butt_widget.dart';
+import 'package:online_food_order/interlization/interlization.dart';
 
 import '../../../../../customWidget/custom_text_widget.dart';
 import '../../detailedFoodScreen/detailed_food_screen.dart';
@@ -32,8 +34,7 @@ class popularFoodWidget extends StatelessWidget {
                 homeController: homeController,
                 index: index,
                 popularFood: homeController.popularFood[index],
-              )
-              );
+              ));
             },
             child: Container(
               margin: EdgeInsets.all(10),
@@ -42,13 +43,17 @@ class popularFoodWidget extends StatelessWidget {
                 child: Column(
                   children: [
                     Image.asset(homeController.popularFood[index].image),
-                    Padding(
-                      padding: const EdgeInsets.only(right: 45),
-                      child: CustomTextWidget(
-                        fontSize: 18,
-                        fontWeight: FontWeight.w400,
-                        text: homeController.popularFood[index].foodName,
-                      ),
+                    Row(
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.only(right: 45),
+                          child: CustomTextWidget(
+                            fontSize: 18,
+                            fontWeight: FontWeight.w400,
+                            text: homeController.popularFood[index].foodName,
+                          ),
+                        ),
+                      ],
                     ),
                     Row(
                       children: [
@@ -59,25 +64,38 @@ class popularFoodWidget extends StatelessWidget {
                         CustomTextWidget(
                             fontSize: 12,
                             fontWeight: FontWeight.w200,
-                            text: homeController.popularFood[index].hotelName)
+                            text: homeController.popularFood[index].hotelName),
+                        Spacer(),
+                        IconButton(
+                            onPressed: () {},
+                            icon: Icon(
+                              Icons.favorite,
+                              color: CustomColor().buttonColor,
+                            )),
                       ],
                     ),
                     Row(
                       children: [
-                        Icon(
-                          Icons.star,
-                          color: Colors.orange,
-                          size: 16,
+                        SizedBox(
+                          width: 10,
                         ),
-                        CustomRatingWidget(
-                            homeController: homeController, index: index),
+                        CustomElevButton(
+                          text: LocalName.addToCart.tr,
+                          onpressed: () {},
+                          textColor: CustomColor().buttonColor,
+                          buttonBgColor: CustomColor().whiteColor,
+                          buttonRadius: 20,
+                          sizedBoxWidth: 0.35,
+                          sizedBoxHieght: 0.10,
+                          borderColor: CustomColor().blackColor,
+                        ),
                         Spacer(),
                         CustomPriceWidget(
                           homeController: homeController,
                           index: index,
                         )
                       ],
-                    )
+                    ),
                   ],
                 ),
               ),
