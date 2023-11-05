@@ -4,11 +4,8 @@ import '../../../../../ utils/custom_color.dart';
 import '../home_screen_controller.dart';
 
 class CustomRatingWidget extends StatelessWidget {
-  const CustomRatingWidget({
-    super.key,
-    required this.homeController,
-    required this.index
-  });
+  const CustomRatingWidget(
+      {super.key, required this.homeController, required this.index});
 
   final HomeScreenController homeController;
   final int index;

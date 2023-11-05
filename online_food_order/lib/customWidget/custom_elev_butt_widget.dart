@@ -10,8 +10,7 @@ class CustomElevButton extends StatelessWidget {
       required this.buttonRadius,
       required this.sizedBoxWidth,
       required this.sizedBoxHieght,
-       this.borderColor
-      });
+      this.borderColor});
   final String text;
   final Color textColor;
   final VoidCallback? onpressed;
@@ -19,7 +18,7 @@ class CustomElevButton extends StatelessWidget {
   final double buttonRadius;
   final double sizedBoxWidth;
   final double sizedBoxHieght;
-  final  Color? borderColor;
+  final Color? borderColor;
   @override
   Widget build(BuildContext context) {
     return SizedBox(
@@ -32,7 +31,7 @@ class CustomElevButton extends StatelessWidget {
           style: TextStyle(color: textColor),
         ),
         style: ElevatedButton.styleFrom(
-          side: BorderSide(width: 2,color:borderColor ?? Colors.white ),
+            side: BorderSide(width: 2, color: borderColor ?? Colors.white),
             backgroundColor: buttonBgColor,
             shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(buttonRadius))),

@@ -4,9 +4,9 @@ class Internationalization extends Translations {
   @override
   Map<String, Map<String, String>> get keys => {
         'en_US': {
-          LocalName.onlineFoodDelivery: "Online Food Delivery",
+          LocalName.onlineShopDelivery: "Online Shop Delivery",
           LocalName.paragrphText: "Satisfy every carving with our"
-              " expectional food delivery\n "
+              " expectional shop delivery\n "
               "service.",
           LocalName.getStarted: "Get  Started",
           LocalName.login: "Login",
@@ -65,15 +65,15 @@ class Internationalization extends Translations {
           LocalName.subTotal: "Sub Total",
           LocalName.deliveryCharge: "Delivery Charge",
           LocalName.total: "Total",
-          LocalName.placeOrder : "Place Order"
+          LocalName.placeOrder: "Place Order"
         }
       };
 }
 
 class LocalName {
-  static String onlineFoodDelivery = "online_food_delivery";
+  static String onlineShopDelivery = "online_shop_delivery";
   static String paragrphText =
-      "satisfy_every_carving_with_our_expectional_food_delivery_service.";
+      "satisfy_every_carving_with_our_expectional_shop_delivery_service.";
   static String getStarted = "get_started";
   static String login = "login";
   static String email = "email";

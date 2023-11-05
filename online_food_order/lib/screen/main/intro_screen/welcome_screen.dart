@@ -30,7 +30,7 @@ class WelcomeScreen extends StatelessWidget {
                 ),
                 SizedBox(height: 40),
                 CustomTextWidget(
-                  text: LocalName.onlineFoodDelivery.tr,
+                  text: LocalName.onlineShopDelivery.tr,
                   fontSize: 30,
                   fontWeight: FontWeight.w500,
                 ),

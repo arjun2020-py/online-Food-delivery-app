@@ -7,7 +7,11 @@ import '../../../../../interlization/interlization.dart';
 
 class CalualatePriceWidget extends StatelessWidget {
   const CalualatePriceWidget(
-      {super.key, required this.text, required this.price, this.color,this.priceColor});
+      {super.key,
+      required this.text,
+      required this.price,
+      this.color,
+      this.priceColor});
   final String text;
   final String price;
   final Color? color;
@@ -23,7 +27,7 @@ class CalualatePriceWidget extends StatelessWidget {
             Icon(
               Icons.currency_rupee_outlined,
               size: 15,
-              color:priceColor ?? CustomColor().blackColor,
+              color: priceColor ?? CustomColor().blackColor,
             ),
             CustomTextWidget(
                 fontSize: 15,

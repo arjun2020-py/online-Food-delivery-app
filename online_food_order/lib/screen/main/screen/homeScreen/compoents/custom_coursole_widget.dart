@@ -16,7 +16,6 @@ class customCarouselWidet extends StatelessWidget {
     return CarouselSlider(
       items: homeController.imageList.map((item) {
         return Container(
-          
           margin: EdgeInsets.all(5.0),
           child: Image.asset(
             item,

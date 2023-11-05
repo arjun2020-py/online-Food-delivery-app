@@ -13,8 +13,7 @@ class customCatageryScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return 
-    Container(
+    return Container(
       height: 100, // Set a fixed height here as an example
       child: ListView.builder(
         scrollDirection: Axis.horizontal,

@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 
 import '../../../../../ utils/custom_color.dart';
@@ -6,11 +5,8 @@ import '../../../../../customWidget/custom_text_widget.dart';
 import '../../homeScreen/home_screen_controller.dart';
 
 class CustomFoodPriceWidget extends StatelessWidget {
-  const CustomFoodPriceWidget({
-    super.key,
-    required this.homeController,
-    required this.index
-  });
+  const CustomFoodPriceWidget(
+      {super.key, required this.homeController, required this.index});
 
   final HomeScreenController homeController;
   final int index;

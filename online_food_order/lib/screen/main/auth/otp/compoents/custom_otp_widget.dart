@@ -18,17 +18,15 @@ class CustomOtpWidget extends StatelessWidget {
             height: 68,
             width: 64,
             child: TextFormField(
-              
               onChanged: (value) {
                 if (value.length == 1) {
                   FocusScope.of(context).nextFocus();
-                } 
+                }
                 // else {
                 //   FocusScope.of(context).previousFocus();
                 // }
               },
               decoration: InputDecoration(
-                
                   filled: true, fillColor: CustomColor().whiteColor),
               style: Theme.of(context)
                   .textTheme

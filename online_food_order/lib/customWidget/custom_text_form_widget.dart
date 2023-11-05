@@ -9,8 +9,7 @@ class customTextfromFiledWidget extends StatelessWidget {
       required this.validator,
       required this.keyboardType,
       required this.obscureText,
-      required this.controller
-      });
+      required this.controller});
   final String hintText;
   String? Function(String?)? validator;
   final TextInputType keyboardType;
@@ -21,7 +20,7 @@ class customTextfromFiledWidget extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 10),
       child: TextFormField(
-        controller:controller ,
+        controller: controller,
         textInputAction: TextInputAction.next,
         obscureText: obscureText,
         keyboardType: keyboardType,

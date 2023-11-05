@@ -11,5 +11,6 @@ class PopularFood {
   final double price;
   final double rating;
   final int count;
-  PopularFood(this.foodName,this.image,this.hotelName,this.price,this.rating,this.count);
+  PopularFood(this.foodName, this.image, this.hotelName, this.price,
+      this.rating, this.count);
 }

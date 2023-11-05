@@ -5,11 +5,8 @@ import '../../../../../ utils/custom_color.dart';
 import '../home_screen_controller.dart';
 
 class CustomPriceWidget extends StatelessWidget {
-  const CustomPriceWidget({
-    super.key,
-    required this.homeController,
-    required this.index
-  });
+  const CustomPriceWidget(
+      {super.key, required this.homeController, required this.index});
 
   final HomeScreenController homeController;
   final int index;

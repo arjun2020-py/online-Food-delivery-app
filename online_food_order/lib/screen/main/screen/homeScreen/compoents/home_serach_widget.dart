@@ -23,12 +23,12 @@ class homeSerchWidget extends StatelessWidget {
             filled: true,
             fillColor: CustomColor().whiteColor,
             enabledBorder: OutlineInputBorder(
-                borderSide: BorderSide(
-                    width: 2, color: CustomColor().whiteColor),
+                borderSide:
+                    BorderSide(width: 2, color: CustomColor().whiteColor),
                 borderRadius: BorderRadius.circular(40)),
             focusedBorder: OutlineInputBorder(
-                borderSide: BorderSide(
-                    width: 2, color: CustomColor().whiteColor),
+                borderSide:
+                    BorderSide(width: 2, color: CustomColor().whiteColor),
                 borderRadius: BorderRadius.circular(40))),
       ),
     );
