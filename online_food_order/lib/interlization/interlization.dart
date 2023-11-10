@@ -61,11 +61,15 @@ class Internationalization extends Translations {
           LocalName.buyNow: 'Buy Now',
           LocalName.ingredients: "Ingredients",
           LocalName.cart: "Cart",
+          LocalName.myCart: "My Cart",
           LocalName.selectedItems: "Selected Items",
           LocalName.subTotal: "Sub Total",
           LocalName.deliveryCharge: "Delivery Charge",
           LocalName.total: "Total",
-          LocalName.placeOrder: "Place Order"
+          LocalName.placeOrder: "Place Order",
+          LocalName.internetConnectionChecker: "Internet Connection Checker",
+          LocalName.name: "Name",
+          LocalName.sucess: "Sucess",
         }
       };
 }
@@ -126,9 +130,13 @@ class LocalName {
   static String buyNow = 'buy_now';
   static String ingredients = 'ingredients';
   static String cart = 'cart';
+  static String myCart = 'myCart';
   static String selectedItems = 'selected_items';
   static String subTotal = 'sub_total';
   static String deliveryCharge = 'delivery_charge';
   static String total = 'total';
   static String placeOrder = 'place_order';
+  static String internetConnectionChecker = 'internet_connection_checker';
+  static String name = 'name';
+  static String sucess = 'sucess';
 }

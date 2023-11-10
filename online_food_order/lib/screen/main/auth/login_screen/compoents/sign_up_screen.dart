@@ -40,12 +40,12 @@ class SignUpScreen extends StatelessWidget {
                   height: 10,
                 ),
                 customTextfromFiledWidget(
-                  controller: authController.emailController,
+                  controller: authController.userController,
                   obscureText: false,
                   keyboardType: TextInputType.text,
                   validator: (value) =>
                       authController.pleaseEnterVaildEmail(value!),
-                  hintText: LocalName.email.tr,
+                  hintText: LocalName.name.tr,
                 ),
                 customTextfromFiledWidget(
                     controller: authController.phoneController,

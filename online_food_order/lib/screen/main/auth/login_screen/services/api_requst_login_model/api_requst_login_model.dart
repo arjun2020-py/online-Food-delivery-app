@@ -8,6 +8,7 @@ class ApiRequstLoginModel {
   String? password;
 
   ApiRequstLoginModel({this.username, this.password});
+  ApiRequstLoginModel.login({required this.username, required this.password});
 
   factory ApiRequstLoginModel.fromJson(Map<String, dynamic> json) {
     return _$ApiRequstLoginModelFromJson(json);

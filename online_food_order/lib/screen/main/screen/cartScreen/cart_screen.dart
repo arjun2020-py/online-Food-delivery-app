@@ -24,7 +24,9 @@ class CartScreen extends StatelessWidget {
         leading:
             IconButton(onPressed: () {}, icon: Icon(Icons.arrow_back_ios_new)),
         title: CustomTextWidget(
-            fontSize: 20, fontWeight: FontWeight.w500, text: LocalName.cart.tr),
+            fontSize: 20,
+            fontWeight: FontWeight.w500,
+            text: LocalName.myCart.tr),
       ),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.start,
